@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Programming Survey Form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="survey-container">
+    <h2>Programming Survey</h2>
+    <form>
+      
+      <!-- Radio buttons -->
+      <div class="form-group">
+        <label class="question">What is your preferred programming language?</label>
+        <label><input type="radio" name="language" value="html"> HTML</label>
+        <label><input type="radio" name="language" value="css"> CSS</label>
+        <label><input type="radio" name="language" value="javascript"> JavaScript</label>
+      </div>
+
+      <!-- Checkboxes -->
+      <div class="form-group">
+        <label class="question">Which tools have you used before?</label>
+        <label><input type="checkbox" name="tools" value="vscode"> VS Code</label>
+        <label><input type="checkbox" name="tools" value="sublime"> Sublime Text</label>
+        <label><input type="checkbox" name="tools" value="notepad++"> Notepad++</label>
+        <label><input type="checkbox" name="tools" value="atom"> Atom</label>
+      </div>
+
+      <!-- Dropdown -->
+      <div class="form-group">
+        <label class="question" for="level">Your current level:</label>
+        <select id="level" name="level">
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="question" for="comments">Comments or Feedback:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Write your thoughts here..."></textarea>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit">Submit Survey</button>
+    </form>
+  </div>
+
+</body>
+</html>
